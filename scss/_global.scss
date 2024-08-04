@@ -1,0 +1,79 @@
+@mixin flex($jc: flex-start, $al: center, $fd: row, $wp: wrap) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $al;
+    flex-direction: $fd;
+    flex-wrap: $wp;
+}
+
+@mixin fullScreen($wi: 100vw, $hd: 100vh) {
+    width: $wi;
+    height: $hd;
+}
+
+@mixin fullRatio($wi: 100%, $hd: 100%) {
+    width: $wi;
+    height: $hd;
+}
+
+
+// colors...
+$black: #171717;
+$white: #eeeeee;
+$grey: #cfcfcf;
+
+// primary colors - Tradic
+$primary: blue;
+$secondary: red;
+$atc: yellow;
+
+// universal colors
+$danger: #ff5555;
+$warn: #ffe54f;
+$success: #54d661;
+
+
+// font...
+#League_Spartan {
+    font-family: var(--font-main);
+}
+#poppins {
+    font-family: var(--font-pop);
+}
+
+// numbers (px)...
+$sm: 16px;
+$md: 20px;
+$lg: 24px;
+$xl: 32px;
+$xxl: 48px;
+$full: 100px;
+
+// ratios...
+$fullRatio: 100%;
+$midRatio: 80%;
+$halfRatio: 50%;
+$quaterRatio: 30%;
+
+
+
+$breakpoints: (
+  mobile : 0px, 
+  tablet : 589px,
+  desktop: 899px,
+);
+
+$maxPoints: (
+	mobile: 590px,
+	tablet: 1023px,
+  desktop: 2080px
+
+);
+
+@mixin media($keys...) {
+	@each $key in $keys {
+		@media screen and (min-width: map-get($breakpoints, $key)) and (max-width: map-get($maxPoints, $key)) {
+			@content;
+		}
+	}
+}
