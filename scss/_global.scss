@@ -1,4 +1,4 @@
-@mixin flex($jc: flex-start, $al: center, $fd: row, $wp: wrap) {
+@mixin flex($jc: center, $al: center, $fd: row, $wp: wrap) {
     display: flex;
     justify-content: $jc;
     align-items: $al;
@@ -6,14 +6,14 @@
     flex-wrap: $wp;
 }
 
-@mixin fullScreen($wi: 100vw, $hd: 100vh) {
-    width: $wi;
-    height: $hd;
+@mixin fullScreen($w: 100vw, $h: 100vh) {
+    width: $w;
+    height: $h;
 }
 
-@mixin fullRatio($wi: 100%, $hd: 100%) {
-    width: $wi;
-    height: $hd;
+@mixin fullRatio($w: 100%, $h: 100%) {
+    width: $w;
+    height: $h;
 }
 
 
@@ -23,7 +23,7 @@ $white: #eeeeee;
 $grey: #cfcfcf;
 
 // primary colors - Tradic
-$primary: blue;
+$primary: #9a6bff;
 $secondary: red;
 $atc: yellow;
 

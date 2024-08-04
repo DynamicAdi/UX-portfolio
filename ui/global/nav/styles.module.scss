@@ -1,0 +1,10 @@
+@import "./../../../scss/global";
+
+.nav 
+{
+    width: 100vw;
+    height: 4.5rem;
+    @include flex(flex-start, center);
+    padding: 0px $lg;
+    font-size: 1.5rem;
+}

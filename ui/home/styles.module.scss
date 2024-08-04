@@ -1,0 +1,87 @@
+@import "./../../scss/global";
+
+.container {
+  @include fullScreen($h: auto);
+  position: relative;
+  @include flex();
+  .child {
+    width: 95%;
+    height: 85%;
+    @include flex(space-between, flex-start);
+    .content {
+      @include flex(flex-end, flex-start, column);
+      width: 58%;
+      gap: 6rem;
+      .upper {
+        position: relative;
+        h1 {
+          font-size: 10rem;
+          font-weight: 800;
+          margin-top: 6%;
+          line-height: -10%;
+          span {
+            color: $primary;
+          }
+        }
+
+        h2 {
+          // position: absolute;
+          right: 0;
+          width: 80%;
+          font-size: 2.5rem;
+          font-weight: 400;
+          font-family: var(--font-pop);
+          span {
+            font-weight: 600;
+            color: $primary;
+          }
+        }
+
+        .button {
+            text-decoration: none;
+            button {
+              cursor: pointer;
+                margin-top: 3%;
+                padding: 0.8rem 1rem;
+                font-size: 1.36rem;
+                font-weight: 500;
+                font-family: var(--font-pop);
+                letter-spacing: 1px;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                color: $primary;
+                background-color: rgba($color: $primary, $alpha: 0.3);
+                @include flex();
+                gap: 1rem;
+              transition: 0.3s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                &:hover {
+                  background-color: rgba($color: $primary, $alpha: 0.9);
+                  color: white;
+                  transform: scale(0.8);
+                }
+            }
+        }
+      }
+
+      .lower {
+        @include flex(flex-start, flex-end);
+        gap: 4rem;
+        .box {
+          h1 {
+            color: $primary;
+            font-weight: 800;
+            font-size: 6rem;
+          }
+          h2 {
+            font-size: 5rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .art {
+      width: 42%;
+    }
+  }
+}
