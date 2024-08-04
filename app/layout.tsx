@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${mainFont.variable} ${mainFont.className} ${secondaryFont.variable}`}>{children}</body>
+      <body className={`${mainFont.className} ${secondaryFont.variable}`}>{children}</body>
     </html>
   );
 }

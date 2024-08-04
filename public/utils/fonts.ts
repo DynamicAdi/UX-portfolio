@@ -1,4 +1,4 @@
-import { League_Spartan, Poppins } from "next/font/google";
+import { League_Spartan, Tenor_Sans, Work_Sans } from "next/font/google";
 
 export const mainFont = League_Spartan({
     weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -6,8 +6,15 @@ export const mainFont = League_Spartan({
     variable: "--font-main",
 });
 
-export const secondaryFont = Poppins({
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+export const secondaryFont = Tenor_Sans({
     subsets: ["latin"],
-    variable: "--font-pop",
+    variable: '--font-minor',
+    weight: "400",
 });
+
+export const assetFont = Work_Sans({
+    subsets: ["latin"],
+    variable: '--font-pop',
+    weight: ['300', '400', '500', '600', '700', '800'],
+});
+

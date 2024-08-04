@@ -1,0 +1,95 @@
+@import "./../../scss/global";
+
+
+.container {
+    @include fullScreen();
+    .child {
+        width: 100%;
+        height: 90%;
+        @include flex(center, flex-start);
+        .box {
+            width: 95%;
+            height: 100%;
+            @include flex(space-between);
+            gap: 0.8rem;
+        .context {
+            width: 28%;
+            height: 100%;
+            @include flex(space-between, flex-start, column);
+            gap: 0;
+            &.second {
+                width: 40%;
+            }
+            .product {
+                width: 100%;
+                height: 40%;
+                @include flex(flex-start, flex-start, column);
+
+                &.first {
+                    height: 58%;
+                    .image {
+                        height: 80%;
+                    }
+                }
+                &.innerSecond {
+                    height: 40%;
+                    .image {
+                        height: 73%;
+                    }
+                }
+
+
+
+                &.secondFirst {
+                    height: 46%;
+                    .image {
+                        height: 70%;
+                    }
+                }
+                &.SecondInnerSecond {
+                    height: 52%;
+                    .image {
+                        height: 80%;
+                    }
+
+                }
+
+                &.thirdFirst {
+                    height: 49%;
+                }
+
+                &.ThirdInnerSecond {
+                    height: 49%;
+                }
+
+                .image {
+                    width: 100%;
+                    height: 78%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        background-position: center center;
+                    }
+                }
+                .text {
+                    text-align: left;
+                    padding: 0.5rem 0px;
+                    padding-bottom: 0px;
+                    @include flex(space-between, flex-start, column);
+                    gap: 0.5rem;
+                    h3 {
+                        color: gray;
+                        font-family: var(--font-pop);
+                        font-weight: 300;
+                        font-size: 1.5rem;
+                    }
+                    h1 {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        }
+    }
+}
