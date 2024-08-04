@@ -1,3 +1,4 @@
+import Blog from "@/ui/blogs";
 import CaseStudies from "@/ui/case studies";
 import Navbar from "@/ui/global/nav";
 import HomeScreen from "@/ui/home";
@@ -9,6 +10,7 @@ export default function Home() {
     <Navbar />
     <HomeScreen />
     <CaseStudies />
+    <Blog />
     </>
   );
 }
