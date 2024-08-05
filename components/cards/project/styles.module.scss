@@ -1,0 +1,68 @@
+@import "./../../../scss/global";
+
+.box {
+    width: 100%;
+    height: 18%;
+    border-bottom: 2px solid $grey;
+    border-left: 0px;
+    border-right: 0px;
+    position: relative;
+    transition: 0.3s background-color cubic-bezier(1, 0, 0, 1);
+    cursor: pointer;
+    &:hover {
+        background-color: black;
+        color: white;
+        border-bottom: 2px solid white;
+
+        .text {
+            h1 {
+                margin-left: 4%;
+            }
+            p {
+                margin-right: 2%;
+            }
+        }
+        .img {
+            transform: scale(1);
+        }
+    }
+    .img {
+        position: absolute;
+        top: -60%;
+        z-index: 4;
+        left: 40%;
+        width: 20rem;
+        height: 25rem;
+        object-fit: cover;
+        transition: 0.4s all ease;
+        transform: scale(0);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .text {
+        @include flex(space-between, center);
+        width: 100%;
+        height: 100%;
+        padding: 0px 1rem;
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 600;
+            font-family: var(--font-minor);
+            transition: 0.4s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        p {
+            // background-color: red;
+            font-size: 1.3rem;
+            font-family: var(--font-pop);
+            width: 20%;
+            transition: 0.4s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+        }
+
+    }
+
+}
