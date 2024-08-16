@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from "./styles.module.scss";
-import Link from 'next/link';
 
 function ProjectCard() {
   return (

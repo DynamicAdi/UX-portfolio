@@ -7,7 +7,7 @@ import ProjectCard from '@/components/cards/project/ProjectCard'
 function Projects() {
   return (
     <div className={styles.container}>
-        <Title route='/projects'>Latest Projects</Title>
+        <Title route='/projects'>Latest <span>Projects</span></Title>
         <div className={styles.child}>
           <div className={styles.content}>
             <ProjectCard />

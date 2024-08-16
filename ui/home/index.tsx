@@ -46,9 +46,9 @@ function HomeScreen() {
         {/* <p>I am a passionate software developer with expertise in web development and a strong focus on user experience. With a strong foundation in computer science and a deep understanding of programming languages, I have successfully delivered high-quality software solutions that meet the needs of clients and users alike. I am committed to continuous learning and staying up-to-date with the latest technologies and trends in the field of software development. I am excited to bring my skills and experience to new challenges and contribute to the success of your projects.</p> */}
     </div>
     <div className={styles.art}>
-    <svg width="619" height="650" viewBox="0 0 619 691" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect id='myRect' x="10" y="13" width="592" height="677" rx="60" fill="#9D6FFF" />
-<image href={profile.src} x="30" y="150" width="560" height="590" clipPath="url(#clip)"/>
+    <svg width="619" height="650" viewBox="0 0 619 691" fill="none">
+<rect id='myRect' x="10" y="13" width="592" height="677" rx="60" fill="#ff1c24" />
+<image href={profile.src} x="20" style={{filter: 'drop-shadow(0 0 0.75rem #00000050)'}} y="150" width="560" height="590" clipPath="url(#clip)"/>
 <clipPath id="clip">
     <use href="#myRect" />
   </clipPath>

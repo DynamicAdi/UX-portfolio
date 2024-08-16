@@ -45,7 +45,7 @@ const obj:any = [
 function CaseStudies() {
   return (
     <div className={styles.container}>
-      <Title route="/case-studies">Case studies</Title>
+      <Title route="/case-studies"><span>Case</span> studies</Title>
       <div className={styles.child}>
         <div className={styles.box}>
           <div className={`${styles.context}`}>

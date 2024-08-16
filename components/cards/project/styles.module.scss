@@ -10,9 +10,9 @@
     transition: 0.3s background-color cubic-bezier(1, 0, 0, 1);
     cursor: pointer;
     &:hover {
-        background-color: black;
+        background-color: $primary;
         color: white;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid $primary;
 
         .text {
             h1 {
@@ -28,7 +28,7 @@
     }
     .img {
         position: absolute;
-        top: -60%;
+        top: -100%;
         z-index: 4;
         left: 40%;
         width: 20rem;
@@ -36,6 +36,7 @@
         object-fit: cover;
         transition: 0.4s all ease;
         transform: scale(0);
+        // background: red;
 
         img {
             width: 100%;

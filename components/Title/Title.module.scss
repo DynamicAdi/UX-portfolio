@@ -3,7 +3,7 @@
 .context {
     @include flex(space-between);
     padding: 1rem 2rem;
-
+    margin-top: 2%;
     h1 {
         font-size: 3rem;
         font-weight: 700;
@@ -33,13 +33,43 @@
             @include flex();
             color: black;
             letter-spacing: 1.1px;
+            position: relative;
+            transition: 0.2s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            span {
+                transform: translateY(3%);
+            transition: 0.5s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            }
+            &::before{
+                content: 'View all';
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                // background-color: $primary;
+                z-index: -1;
+                color: transparent;
+
+                transition: 0.4s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            }
         .icon {
             size: 30;
         }
         }
 
         &:hover {
-            transform: scale(0.9);
+            // transform: scale(0.9);
+            h3 {
+                color: transparent;
+                span {
+                    color: $primary;
+            transform: translateY(-20%) translateX(-10%);
+
+                }
+                &::before {
+                    inset: -6%;
+                    color: $primary;
+                }
+            }
         }
     }
 }

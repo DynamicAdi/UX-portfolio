@@ -16,7 +16,7 @@ function Title({route, children}: TitleProps) {
     <div className={styles.context}>
         <h1>{children}</h1>
     <Link href={route} className={styles.route}>
-    <h3>view all <IoIosArrowRoundForward size={45}/></h3>
+    <h3>view all <span><IoIosArrowRoundForward size={45} /></span></h3>
     </Link>
     </div>
   )
