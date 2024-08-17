@@ -1,0 +1,48 @@
+@import "./../../../scss/global";
+
+.box {
+    width: 90%;
+    height: 30%;
+    // background-color: red;
+    border-top: 3px solid black;
+    @include flex(space-between, flex-start, column);
+gap: 1.3rem;
+padding: 3.5% 0px;
+h1 {
+    span {
+        font-family: monospace;
+        font-size: 1.8rem;
+    }// color: white;
+    font-size: 4rem;
+}
+.lower {
+    width: 100%;
+    // background-color: red;
+    @include flex(space-between, center);
+    p {
+        width: 85%;
+        font-size: 18px;
+    }
+    a {
+        width: 11%;
+        height: 100%;
+        @include flex(center, center);
+        text-decoration: none;
+        button {
+            cursor: pointer;
+            width: 50%;
+            height: 100%;
+            background-color: $primary;
+            color: white;
+            border: none;
+            transform: rotate(145deg);
+            border-radius: 9999px;
+            @include flex();
+            font-weight: 600;
+        
+        
+        }
+    }
+
+}
+}

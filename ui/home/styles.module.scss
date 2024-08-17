@@ -83,6 +83,10 @@
     }
     .art {
       width: 42%;
+
+      .svg {
+        fill: $primary;
+      }
     }
   }
 }

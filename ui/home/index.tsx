@@ -47,7 +47,7 @@ function HomeScreen() {
     </div>
     <div className={styles.art}>
     <svg width="619" height="650" viewBox="0 0 619 691" fill="none">
-<rect id='myRect' x="10" y="13" width="592" height="677" rx="60" fill="#ff1c24" />
+<rect id='myRect' x="10" y="13" width="592" height="677" rx="60" className={styles.svg} />
 <image href={profile.src} x="20" style={{filter: 'drop-shadow(0 0 0.75rem #00000050)'}} y="150" width="560" height="590" clipPath="url(#clip)"/>
 <clipPath id="clip">
     <use href="#myRect" />

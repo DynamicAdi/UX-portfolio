@@ -1,0 +1,83 @@
+@import "./../../scss/global";
+
+.services {
+  @include fullScreen();
+  @include flex();
+  // background-color: $primary;
+
+  .child {
+    @include fullRatio($h: 90%);
+    @include flex(space-between);
+
+    .left,
+    .right {
+      width: 50%;
+      height: 100%;
+      // background-color: red;
+      padding: 2%;
+    }
+    .left {
+      @include flex(flex-start, flex-start, column);
+      position: relative;
+      .content {
+        position: absolute;
+        top: 22%;
+        h1 {
+          font-size: 8rem;
+          font-weight: 600;
+          line-height: 70%;
+        }
+        p {
+          // color: white;
+          font-size: 16px;
+          font-family: var(--font-minor);
+          margin-left: 8%;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            left: -6%;
+            top: 25%;
+            width: 5%;
+            height: 6%;
+            background-color: black;
+          }
+        }
+      }
+    }
+    .right {
+      padding: 0px;
+      @include flex(space-between, center, row);
+    position: relative;
+      .boxes {
+        width: 90%;
+        height: 100%;
+        @include flex(center, center, column);
+        gap: 1.3rem;
+        padding: 2% 0px;
+      }
+
+      .line {
+        width: 10%;
+        height: 2%;
+        right: -5%;
+        bottom: 10%;
+        margin-right: 3%;
+        position: absolute;
+        transform: rotate(90deg);
+        color: gry;
+        &::before {
+            content: '';
+            width: 36rem;
+            height: 12%;
+            position: absolute;
+            background-color: grey;
+            inset: 0;
+            left: -36.5rem;
+            top: 55%;
+        }
+    }
+    }
+  }
+}
