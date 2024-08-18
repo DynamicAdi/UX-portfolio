@@ -1,10 +1,9 @@
 import React from 'react'
 import styles from "./styles.module.scss";
-import { IoIosArrowForward, IoMdArrowRoundBack } from 'react-icons/io';
 import ServicesCard from '@/components/cards/services/servicesCard';
 
 function Services() {
-  const array = [1, 2, 3];
+  const array = [1, 2, 3, 4, 5, 6];
   return (
     <div className={styles.services}>
         <div className={styles.child}>

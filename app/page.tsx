@@ -5,6 +5,7 @@ import Navbar from "@/ui/global/nav";
 import HomeScreen from "@/ui/home";
 import Projects from "@/ui/projects";
 import Services from "@/ui/services/page";
+import Testmonials from "@/ui/testmonials/page";
 import React from "react";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
     <Services />
     <Projects />
     <CaseStudies />
+    <Testmonials />
     <Blog />
     </>
   );

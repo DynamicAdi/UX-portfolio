@@ -50,23 +50,27 @@
       padding: 0px;
       @include flex(space-between, center, row);
     position: relative;
+    overflow: scroll;
+    overflow-x: hidden;
       .boxes {
         width: 90%;
-        height: 100%;
+        height: auto;
         @include flex(center, center, column);
         gap: 1.3rem;
         padding: 2% 0px;
+        // overflow: scroll;
+        
       }
 
-      .line {
-        width: 10%;
+        .line {
+      // background-color: blue;
+          width: 10%;
         height: 2%;
-        right: -5%;
-        bottom: 10%;
-        margin-right: 3%;
-        position: absolute;
         transform: rotate(90deg);
-        color: gry;
+        position: sticky;
+        top: 80%;
+        right: 2%;
+        color: grey;
         &::before {
             content: '';
             width: 36rem;
@@ -76,8 +80,8 @@
             inset: 0;
             left: -36.5rem;
             top: 55%;
-        }
-    }
+          }
+      }
     }
   }
 }
