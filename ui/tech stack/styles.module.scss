@@ -14,6 +14,24 @@
             padding-bottom: 0;
             overflow: scroll;
             overflow-x: hidden;
+            &::-webkit-scrollbar {
+                width: 0px;
+              }
+              
+              /* Track */
+              &::-webkit-scrollbar-track {
+                border-radius: 0px;
+              }
+               
+              /* Handle */
+              &::-webkit-scrollbar-thumb {
+                background: transparent; 
+              }
+              
+              /* Handle on hover */
+              &::-webkit-scrollbar-thumb:hover {
+                background: transparent; 
+              }
             .context {
                 width: 90%;
                 height: auto;

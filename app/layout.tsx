@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "@/scss/universal.scss";
-import { mainFont, secondaryFont } from "@/public/utils/fonts";
+import { assetFont, customUiFont, mainFont, secondaryFont } from "@/public/utils/fonts";
 
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${mainFont.className} ${secondaryFont.variable}`}>{children}</body>
+      <body className={`${mainFont.className} ${secondaryFont.variable} ${assetFont.variable} ${customUiFont.variable}`}>{children}</body>
     </html>
   );
 }

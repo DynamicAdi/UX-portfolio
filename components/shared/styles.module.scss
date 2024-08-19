@@ -49,6 +49,7 @@
             color: $primary;
           }
           p {
+            // font-family: var(--font-pop);
             color: $primary;
           }
         }
@@ -81,8 +82,8 @@
 
         }
         p {
-          font-weight: 400;
-          font-family: var(--font-pop);
+          font-weight: 300;
+          // font-family: var(--font-pop);
           font-size: 1.4rem;
           color: $grey;
           transition: 0.4s all cubic-bezier(0.19, 1, 0.22, 1);

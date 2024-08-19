@@ -74,7 +74,7 @@
                 }
                 .text {
                     text-align: left;
-                    padding: 0.5rem 0px;
+                    padding: 0.2rem 0px 0px 0px;
                     padding-bottom: 0px;
                     @include flex(space-between, flex-start, column);
                     gap: 0.5rem;
@@ -82,7 +82,7 @@
                         color: gray;
                         font-family: var(--font-pop);
                         font-weight: 300;
-                        font-size: 1.5rem;
+                        font-size: 1.2rem;
                     }
                     h1 {
                         font-weight: 500;
