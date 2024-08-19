@@ -1,4 +1,4 @@
-import { League_Spartan, Tenor_Sans, Work_Sans } from "next/font/google";
+import { League_Spartan, Tenor_Sans, DM_Sans } from "next/font/google";
 
 export const mainFont = League_Spartan({
     weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -12,7 +12,7 @@ export const secondaryFont = Tenor_Sans({
     weight: "400",
 });
 
-export const assetFont = Work_Sans({
+export const assetFont = DM_Sans({
     subsets: ["latin"],
     variable: '--font-pop',
     weight: ['300', '400', '500', '600', '700', '800'],

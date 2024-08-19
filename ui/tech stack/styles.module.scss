@@ -1,0 +1,75 @@
+@import "./../../scss/global";
+
+.container {
+    @include fullScreen();
+    @include flex();
+    .child {
+        @include fullRatio($h: 90%);
+        @include flex(space-between);
+        .right {
+            width: 45%;
+            height: 100%;
+            // background-color: red;
+            padding: 2%;
+            padding-bottom: 0;
+            overflow: scroll;
+            overflow-x: hidden;
+            .context {
+                width: 90%;
+                height: auto;
+                // background-color: green;
+                @include flex(flex-start, flex-start, column);
+                gap: 0.5rem;
+
+                .slider {
+                    width: 90%;
+                    height: 6rem;
+                    // background: black;
+                    @include flex(center, center, column);
+                    gap: 0.5rem;
+
+                    .upper {
+                        width: 100%;
+                        height: 33%;
+                        @include flex(flex-start);
+                        gap: 0.3rem;
+
+                        // ICON CODE will go here 
+
+                        p {
+                            font-size: 1.5rem;
+                            font-family: var(--font-pop);
+                            text-transform: capitalize;
+                        }
+                    }
+                    .center {
+                        width: 100%;
+                        height: 3%;
+                        border-radius: 100px;
+                        background-color: #e9e9e9;
+                        position: relative;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 80%;
+                            height: 100%;
+                            border-radius: 100px;
+                            background: linear-gradient(to right, $danger 10%, $success 90%);
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                    .lower {
+                        width: 100%;
+                        height: 20%;
+                        // background-color: white;
+                        @include flex(flex-end);
+                        p {
+                            font-family: var(--font-minor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@import "./../../scss/global";
+
+.left {
+    width: 48%;
+    height: 100%;
+    padding: 2%;
+    @include flex(space-evenly, flex-start, column);
+    position: relative;
+    gap: 1.5rem;
+    .content {
+      h1 {
+        font-size: 8rem;
+        font-weight: 600;
+        line-height: 70%;
+      }
+      p {
+        font-size: 16px;
+        font-family: var(--font-minor);
+        margin-left: 8%;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          left: -6%;
+          top: 25%;
+          width: 5%;
+          height: 6%;
+          background-color: black;
+        }
+      }
+    }
+    .circles {
+      width: 80%;
+      height: 50%;
+      padding: 2%;
+      @include flex(flex-start);
+      gap: 1.5rem;
+      .tabs {
+        width: 30%;
+        height: 40%;
+        @include flex(flex-start, flex-start, column);
+        gap: 0.6rem;
+        cursor: pointer;
+
+        &:hover {
+          .iconContainer {
+            border: 1px solid $primary;
+            color: $primary;
+          }
+          p {
+            color: $primary;
+          }
+        }
+        &:active  {
+          .iconContainer {
+            transition: 0.2s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transform: scale(0.7);
+            background: $primary;
+            color: white;
+          }
+          p {
+            color: $primary;
+          }
+        }
+
+        .iconContainer {
+          width: 40%;
+          height: 55%;
+          border-radius: 100%;
+          @include flex;
+          color: white;
+          border: 1px solid $grey;
+          color: $grey;
+          transition: 0.4s all cubic-bezier(0.19, 1, 0.22, 1);
+          &.active {
+          background: $primary;
+          color: white;
+          border: none;
+          }
+
+        }
+        p {
+          font-weight: 400;
+          font-family: var(--font-pop);
+          font-size: 1.4rem;
+          color: $grey;
+          transition: 0.4s all cubic-bezier(0.19, 1, 0.22, 1);
+
+          &.active {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
