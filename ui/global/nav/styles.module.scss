@@ -4,7 +4,15 @@
 {
     width: 100vw;
     height: 4.5rem;
-    @include flex(flex-start, center);
+    @include flex(space-between, center);
     padding: 0px $lg;
     font-size: 1.5rem;
+    
+
+    .btn {
+       transform: rotateY(180deg);
+       font-size: 2.5rem;
+       margin-right: 1%;
+        color: $grey;
+    }
 }
