@@ -72,7 +72,7 @@
                             width: 80%;
                             height: 100%;
                             border-radius: 100px;
-                            background: linear-gradient(to right, $danger 10%, $success 90%);
+                            background: $primary;
                             left: 0;
                             top: 0;
                         }
@@ -83,7 +83,9 @@
                         // background-color: white;
                         @include flex(flex-end);
                         p {
-                            font-family: var(--font-minor);
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                            font-family: var(--font-main);
                         }
                     }
                 }
